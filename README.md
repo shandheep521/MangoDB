@@ -30,7 +30,3 @@ This project implements a MongoDB database for a Zen class programme. It include
 5. Find all the mentors with more than 15 mentees
 6. Find the number of users who are absent and did not submit tasks between 15 Oct-2020 and 31-Oct-2020
 
-## Usage
-
-1. Start MongoDB server
-2. Run the schema script to create the database and collections:
