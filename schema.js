@@ -1,10 +1,7 @@
-// schema.js
-// MongoDB database schema for Zen Class Programme with schema validation
 
-// Use zenClassDB database
 db = db.getSiblingDB('zenClassDB');
 
-// Drop existing collections if they exist
+
 db.users.drop();
 db.codekata.drop();
 db.attendance.drop();
@@ -16,7 +13,7 @@ db.drive_participants.drop();
 db.mentors.drop();
 db.mentorship.drop();
 
-// Create Users Collection with Schema Validation
+
 db.createCollection("users", {
   validator: {
     $jsonSchema: {
@@ -53,7 +50,6 @@ db.createCollection("users", {
   }
 });
 
-// Create CodeKata Collection with Schema Validation
 db.createCollection("codekata", {
   validator: {
     $jsonSchema: {
@@ -82,7 +78,6 @@ db.createCollection("codekata", {
   }
 });
 
-// Create Attendance Collection with Schema Validation
 db.createCollection("attendance", {
   validator: {
     $jsonSchema: {
@@ -111,7 +106,6 @@ db.createCollection("attendance", {
   }
 });
 
-// Create Topics Collection with Schema Validation
 db.createCollection("topics", {
   validator: {
     $jsonSchema: {
@@ -143,7 +137,6 @@ db.createCollection("topics", {
   }
 });
 
-// Create Tasks Collection with Schema Validation
 db.createCollection("tasks", {
   validator: {
     $jsonSchema: {
@@ -208,7 +201,6 @@ db.createCollection("task_submissions", {
   }
 });
 
-// Create Company Drives Collection with Schema Validation
 db.createCollection("company_drives", {
   validator: {
     $jsonSchema: {
@@ -240,7 +232,7 @@ db.createCollection("company_drives", {
   }
 });
 
-// Create Drive Participants Collection with Schema Validation
+
 db.createCollection("drive_participants", {
   validator: {
     $jsonSchema: {
@@ -270,7 +262,6 @@ db.createCollection("drive_participants", {
   }
 });
 
-// Create Mentors Collection with Schema Validation
 db.createCollection("mentors", {
   validator: {
     $jsonSchema: {
@@ -302,7 +293,6 @@ db.createCollection("mentors", {
   }
 });
 
-// Create Mentorship Collection with Schema Validation
 db.createCollection("mentorship", {
   validator: {
     $jsonSchema: {
